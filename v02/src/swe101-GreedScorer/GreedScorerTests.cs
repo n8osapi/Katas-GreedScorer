@@ -13,6 +13,8 @@ namespace swe101_GreedScorer
     [TestClass]
     public class GreedScorerShould
     {
+        GreedScorer gs = new GreedScorer();
+
         public void GreedScorerTests()
         {
             //
@@ -63,8 +65,13 @@ namespace swe101_GreedScorer
         [TestMethod]
         public void Should_Return_100_When_For_A_Single_1()
         {
-            GreedScorer gs = new GreedScorer();
             gs.CalculateScore(1).ShouldEqual(100);
+        }
+
+        [TestMethod]
+        public void Should_Return_200_When_For_Two_1s()
+        {
+            gs.CalculateScore(1,1).ShouldEqual(200);
         }
     }
 }
@@ -77,6 +84,6 @@ public class GreedScorer
 
     public int CalculateScore(params int[] Rolls)
     {
-        return 100;
+        return Rolls.Where(x=>x==1).Sum() * 100;
     }
 }

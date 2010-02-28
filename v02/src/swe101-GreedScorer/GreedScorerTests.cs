@@ -11,9 +11,9 @@ namespace swe101_GreedScorer
     /// Summary description for GreedScorerTests
     /// </summary>
     [TestClass]
-    public class GreedScorerTests
+    public class GreedScorerShould
     {
-        public GreedScorerTests()
+        public void GreedScorerTests()
         {
             //
             // TODO: Add constructor logic here
@@ -61,11 +61,22 @@ namespace swe101_GreedScorer
         #endregion
 
         [TestMethod]
-        public void TestMethod1()
+        public void Should_Return_100_When_For_A_Single_1()
         {
-            //
-            // TODO: Add test logic	here
-            //
+            GreedScorer gs = new GreedScorer();
+            gs.CalculateScore(1).ShouldEqual(100);
         }
+    }
+}
+
+public class GreedScorer
+{
+    public GreedScorer()
+    {
+    }
+
+    public int CalculateScore(params int[] Rolls)
+    {
+        return 100;
     }
 }

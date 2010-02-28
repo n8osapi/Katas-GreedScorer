@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "swe101-GreedScorer", "swe101-GreedScorer.csproj", "{8801394D-6F2D-4831-928B-A977348A6212}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BF950E39-1F8F-4B9E-BF26-AC58258211BE}"
+	ProjectSection(SolutionItems) = preProject
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+		swe101-GreedScorer.vsmdi = swe101-GreedScorer.vsmdi
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = swe101-GreedScorer.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8801394D-6F2D-4831-928B-A977348A6212}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8801394D-6F2D-4831-928B-A977348A6212}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8801394D-6F2D-4831-928B-A977348A6212}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8801394D-6F2D-4831-928B-A977348A6212}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

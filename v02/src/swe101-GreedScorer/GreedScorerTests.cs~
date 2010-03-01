@@ -220,3 +220,4 @@ public static class GreedScorerExtensions
         return Rolls.Where(x => x == NumberToLookFor).Count() % 3;
     }
 }
+

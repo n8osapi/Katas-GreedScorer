@@ -78,6 +78,7 @@ namespace swe101_GreedScorer
         public void Should_Return_1000_When_Roll_Is_Three_1s()
         {
             gs.CalculateScore(1, 1, 1).ShouldEqual(1000);
+            gs.CalculateScore(1, 1, 1, 1, 1, 1).ShouldEqual(2000);
         }
 
         [TestMethod]
@@ -90,12 +91,6 @@ namespace swe101_GreedScorer
         public void Should_Return_1200_When_Roll_Is_Five_1s()
         {
             gs.CalculateScore(1, 1, 1, 1, 1).ShouldEqual(1200);
-        }
-
-        [TestMethod]
-        public void Should_Return_2000_When_Roll_Is_Six_1s()
-        {
-            gs.CalculateScore(1, 1, 1, 1, 1, 1).ShouldEqual(2000);
         }
 
         [TestMethod]
@@ -114,6 +109,7 @@ namespace swe101_GreedScorer
         public void Should_Return_500_When_Roll_Is_Three_5s()
         {
             gs.CalculateScore(5, 5, 5).ShouldEqual(500);
+            gs.CalculateScore(5, 5, 5, 5, 5, 5).ShouldEqual(1000);
         }
 
         [TestMethod]
@@ -126,12 +122,6 @@ namespace swe101_GreedScorer
         public void Should_Return_600_When_Roll_Is_Five_5s()
         {
             gs.CalculateScore(5, 5, 5, 5, 5).ShouldEqual(600);
-        }
-
-        [TestMethod]
-        public void Should_Return_1000_When_Roll_Is_Six_5s()
-        {
-            gs.CalculateScore(5, 5, 5, 5, 5, 5).ShouldEqual(1000);
         }
 
         [TestMethod]
